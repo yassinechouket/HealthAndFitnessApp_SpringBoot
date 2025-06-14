@@ -1,0 +1,34 @@
+### GET request to example server
+POST http://localhost:8080/user/save
+Content-Type: application/json
+
+{
+  "name": "bor3i",
+  "age" : 55,
+  "weight": 50.5,
+  "height": 1.70,
+  "gender": "MALE"
+
+}
+
+###
+POST http://localhost:8080/workout/save
+Content-Type: application/json
+
+{
+"type": "cardio",
+  "duration": 30,
+  "caloriesBurned": 1000,
+  "date": "2025-06-14",
+  "user_id": 1
+}
+###
+GET http://localhost:8080/user
+
+###
+GET http://localhost:8080/workout
+
+###
+GET http://localhost:8080/user/1
+###
+GET http://localhost:8080/workout/type/cardio
